@@ -4,7 +4,8 @@ import random
 
 def main():
     # Create a parking lot
-    parking_lot = ParkingLot(2000)
+    size=int(input())
+    parking_lot = ParkingLot(size)
 
     # Create an array of cars with random license plates
     cars = [Car(f"{random.randint(1000000, 9999999)}") for _ in range(10)]

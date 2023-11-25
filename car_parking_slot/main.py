@@ -4,11 +4,15 @@ import random
 
 def main():
     # Create a parking lot
+    '''
+    #Dynamic Input
     size=int(input())
-    parking_lot = ParkingLot(size)
+    parking_lot = ParkingLot(size)'''
 
     # Create an array of cars with random license plates
     cars = [Car(f"{random.randint(1000000, 9999999)}") for _ in range(10)]
+    parking_lot=ParkingLot(2000)
+    
 
     # Simulate parking
     for car in cars:
